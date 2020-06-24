@@ -5,26 +5,36 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  
-  li {
-    padding: 2rem;
+  @media (max-width: 950px) {
+    padding-top: 3rem;
   }
-  @media (max-width: 800px) {
+
+  li {
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: #4c5425;
+    cursor: pointer;
+  }
+
+  @media (max-width: 950px) {
     /* display: none; */
     flex-flow: column nowrap;
     background: #f01827;
     position: fixed;
     top: 0;
     right: 0;
-    transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+    transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(100%)')};
+    opacity: ${({ open }) => (open ? 1 : 0)};
     height: 100vh;
-    width: 36rem;
-    padding-top: 3rem;
-    transition: transform 0.2s ease-in-out;
+    width: 33.5rem;
+    /* padding-top: 5rem; */
+    transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     li {
       color: white;
       font-size: 3rem;
-      padding: 2rem 1rem
+      padding: 3rem 1.5rem;
+      /* margin-top: 3rem */
     }
   }
 `;

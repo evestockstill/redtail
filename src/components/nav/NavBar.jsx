@@ -13,6 +13,8 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #f01827;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
   .logo {
     padding: 1rem;
   }
@@ -23,11 +25,11 @@ const NavBar = () => {
       <Nav>
         <div className="logo">
           <Media
-            query='(min-width: 900px)'
+            query='(min-width: 1100px)'
             render={() => <img src={logo} />}
           />
           <Media
-            query='(min-width: 600px) and (max-width: 899px)'
+            query='(min-width: 600px) and (max-width: 1099px)'
             render={() => <img src={midLogo} />}
           />
 

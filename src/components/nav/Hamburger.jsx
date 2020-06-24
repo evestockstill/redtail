@@ -7,18 +7,22 @@ const StyledHamburger = styled.div`
   width: 2rem;
   position: fixed;
   top: 2.5rem;
-  right: 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: column;
-  z-index: 1000;
+  right: 5rem;
+  z-index: 1;
+  display: none;
+
+  @media (max-width: 950px) {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
   div {
     width: 4rem;
     height: 0.3rem;
-    background: ${({ open }) => (open ? '#f01827' : '#4c5425')};
-    border-radius: 2px;
+    background: ${({ open }) => (open ? '#4c5425' : '#f01827')};
+    border-radius: 4px;
     transform-origin: 4.5px;
-    transition: all 0.5s ease;
+    transition: all 0.5s linear;
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
