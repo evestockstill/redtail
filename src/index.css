@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -17,7 +16,30 @@
 html {
   font-size: 62.5%;
 
+  @media screen and (min-width: 100em) {
+    font-size: 70%;
+ 
+  }
+  @media screen and (max-width: 75em) {
+    font-size: 56.25%;
+ 
+  }
+  @media screen and (max-width: 65.25em) {
+    font-size: 52.25%;
+ 
+    @media screen and (max-width: 56.25em) {
+      font-size: 50%;
+    
+    }
+    @media screen and (max-width: 37.5em) {
+      font-size: 40%;
+   
+    }
+  }
 }
 body {
   box-sizing: border-box;
 }
+
+$red: #f01827;
+$green: #4c5425;
