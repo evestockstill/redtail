@@ -1,18 +1,1 @@
-@import '../../index.css';
-.nav {
-  padding: 1rem;
-  width: 100%;
-  height: 7.5rem;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid $red;
-  @media screen and (max-width: 599px) {
-    padding: 0.5rem;
-  }
-  .logo_img {
-    padding: 1rem;
-  }
-  .small_img {
-    padding: 0.5rem;
-  }
-}
+

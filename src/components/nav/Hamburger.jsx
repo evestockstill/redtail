@@ -11,10 +11,11 @@ const StyledHamburger = styled.div`
   display: flex;
   justify-content: space-between;
   flex-flow: column;
+  z-index: 1000;
   div {
     width: 4rem;
     height: 0.3rem;
-    background: ${({ open }) => (open ? '#4c5425' : '#f01827')};
+    background: ${({ open }) => (open ? '#f01827' : '#4c5425')};
     border-radius: 2px;
     transform-origin: 4.5px;
     transition: all 0.5s ease;
@@ -40,7 +41,7 @@ const Hamburger = () => {
         <div />
         <div />
       </StyledHamburger>
-      <SideNav />
+      <SideNav open={open} />
     </>
   );
 };
