@@ -1,0 +1,53 @@
+@import "../../index.css";
+
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+     min-height: 100vh;
+}
+img {
+   height: 50rem;
+}
+
+.info_container {
+    position: absolute;
+    width: auto;
+    
+}
+h2 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+
+    .span {
+        padding: 0.8rem;
+        margin-left: 1rem;
+        color: white;
+        letter-spacing: 1px;
+        left: 10px;
+        background: $black-2;
+    }
+}
+
+p {
+   position: absolute;
+    font-size: 1.2rem;
+     top: 80%;
+     left: -10%;
+    width: 44rem;
+    background: $red2;
+    opacity: .3;
+    .pspan {
+        display: block;
+        justify-content: center;
+        padding: 4.5em 2.2rem;
+        letter-spacing: 1px;
+        color: black;
+    }
+}

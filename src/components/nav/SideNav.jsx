@@ -27,7 +27,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(100%)')};
     opacity: ${({ open }) => (open ? 1 : 0)};
     height: 100vh;
-    width: 33.5rem;
+    width: 36.5rem;
     /* padding-top: 5rem; */
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     li {
