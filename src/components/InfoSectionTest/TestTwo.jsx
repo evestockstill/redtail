@@ -10,9 +10,10 @@ const TestTwo = ({ title, img, text, link }) => {
   const pContent = useRef(null);
   const pImage = useRef(null);
   const pSection = useRef(null);
+  
   useEffect(() => {
     gsap.to(pContent.current, {
-      yPercent: -90,
+      yPercent: -80,
       ease: 'none',
       scrollTrigger: {
         trigger: pSection.current,

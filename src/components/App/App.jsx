@@ -12,6 +12,8 @@ export default function App() {
       <Blank />
       <InfoSectionTest />
       <TestTwo />
+      <InfoSectionTest />
+      <TestTwo />
    
     </>
   );
