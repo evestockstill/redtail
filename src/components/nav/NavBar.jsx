@@ -19,6 +19,7 @@ const Nav = styled.nav`
   .logo {
     padding: 1rem;
     animation: moveInLeft;
+
   }
 `;
 const NavBar = () => {

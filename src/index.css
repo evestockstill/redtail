@@ -15,6 +15,7 @@
 
 html {
   font-size: 62.5%;
+   font-family: 'Muli', sans-serif;
 
   @media screen and (min-width: 100em) {
     font-size: 70%;
@@ -46,3 +47,4 @@ $red2: #b8141f;
 $green: #4c5425;
 $black: rgb(20, 19, 19);
 $black-2: rgba(185, 178, 178, 0.233);
+$black-3: rgba(22, 21, 21, 0.89);

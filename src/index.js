@@ -7,8 +7,9 @@ import InfoSection from './components/InfoSection/InfoSection';
 import InfoSectionList from './components/InfoSection/InfoSectionList';
 import InfoSectionTest from './components/InfoSectionTest/InfoSectionTest';
 render(
-  // <App />,
+  <App />,
+  // <NavBar />,
 
-  <InfoSectionTest />,
+  // <InfoSectionTest />,
   document.getElementById('root')
 );

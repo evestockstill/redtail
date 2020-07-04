@@ -48,14 +48,14 @@ p {
      left: -10%;
     width: 64rem;
     border-radius: 3%;
-    background: linear-gradient(to bottom, $green, white);
+    background: linear-gradient(to bottom, rgb(243,207,79), white);
     opacity: .7;
    box-shadow: 0 10px 10px -5px $black-3;
 
     .pspan {
         display: block;
         justify-content: center;
-        padding: 3.5rem 2.2rem;
+        padding: 2.5rem 2.2rem;
         letter-spacing: 1px;
         color: black;
     }
