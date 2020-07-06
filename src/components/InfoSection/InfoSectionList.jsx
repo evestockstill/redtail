@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import InfoSection from './InfoSection';
 
 const InfoSectionList = ({ sections }) => {
@@ -16,7 +16,7 @@ const InfoSectionList = ({ sections }) => {
       {sectionElements}
     </>
   );
-}
+};
 
 InfoSection.propTypes = {
   sections: PropTypes.shape({
@@ -25,6 +25,6 @@ InfoSection.propTypes = {
     text: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired
   })
-}
+};
 
 export default InfoSectionList;
