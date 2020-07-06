@@ -79,7 +79,7 @@ a {
   background-color: rgba(226, 105, 5, 0.651);
 }
 #Private {
- background: linear-gradient(to bottom, $black,  $red);
+ background: linear-gradient(to bottom, $black,  yellow);
 }
 #Refi {
   background: linear-gradient(to bottom, $black,  rgb(21, 67, 196));
