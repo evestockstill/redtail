@@ -1,21 +1,23 @@
 import React from 'react';
 import NavBar from '../nav/NavBar';
 import InfoSection from '../InfoSection/InfoSection';
-import InfoSectionTest from '../InfoSectionTest/InfoSectionTest';
-import TestTwo from '../InfoSectionTest/TestTwo';
-import TestThree from '../InfoSectionTest/TestThree';
+import TlcHomes from '../InfoSectionTest/TlcHomes';
+import Probate from '../InfoSectionTest/Probate';
+import PreForeclosure from '../InfoSectionTest/PreForeclosure';
 import Blank from '../InfoSectionTest/Blank';
+import PrivateMoney from '../InfoSectionTest/PrivateMoney';
+import Refinance from '../InfoSectionTest/Refinance';
 
 export default function App() {
   return (
     <>
       <NavBar />
       <Blank />
-      <TestThree/>
-      <TestTwo />
-      <InfoSectionTest />
-     
-   
+      <PreForeclosure />
+      <Probate />
+      <TlcHomes/>
+      <Refinance />
+      <PrivateMoney />
     </>
   );
 }

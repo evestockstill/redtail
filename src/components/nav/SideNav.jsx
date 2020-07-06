@@ -11,7 +11,7 @@ const Ul = styled.ul`
   }
 
   li {
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
     padding-top: 2rem;
     font-size: 1.7rem;
     color: #4c5425;
@@ -47,7 +47,8 @@ const SideNav = ({ open }) => {
       <li>About Us</li>
       <li>Pre-Foreclosure</li>
       <li>Probate</li>
-      <li>Ugly Houses</li>
+      <li>TLC Homes</li>
+      <li>Refinancing</li>
       <li>Private Money</li>
       <li>Contact Us</li>
     </Ul>

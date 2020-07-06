@@ -1,18 +1,19 @@
 /* eslint-disable react/prop-types */
 import React, { useRef, useEffect } from 'react';
-import oldHome from '../../assets/istockUglyHome.jpg';
-import styles from './InfoSectionTest.css';
+import probate from '../../assets/probate1.jpg';
+import styles from './MainInfo.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const InfoSectionTest = ({ title, img, text, link }) => {
+const Probate = ({ title, img, text, link }) => {
   const pContent = useRef(null);
   const pImage = useRef(null);
   const pSection = useRef(null);
+  
   useEffect(() => {
     gsap.to(pContent.current, {
-      yPercent: -90,
+      yPercent: -80,
       ease: 'none',
       scrollTrigger: {
         trigger: pSection.current,
@@ -35,12 +36,12 @@ const InfoSectionTest = ({ title, img, text, link }) => {
 
   return (
     <>
-      <div className={styles.greenSock_container1}>
-        <section ref={pSection} className={styles.pSection1}>
-          <div className={styles.pContainer1}>
-            <div ref={pContent} className={styles.pContent1}>
-              <h2 className={styles.title1}>Old Home</h2>
-              <p className={styles.paragraph1}>
+      <div className={styles.greenSock_container}>
+        <section ref={pSection} className={styles.pSection}>
+          <div className={styles.pContainer}>
+            <div ref={pContent} className={styles.pContent}>
+              <h2 className={styles.title}>Probate</h2>
+              <p className={styles.paragraph}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
                 laboriosam quibusdam tempora et vitae reiciendis rem amet
                 accusamus at ipsum. Suscipit voluptates animi eaque? Placeat
@@ -48,17 +49,16 @@ const InfoSectionTest = ({ title, img, text, link }) => {
                 nesciunt nostrum voluptatum officiis nulla quidem dolores
                 corporis, voluptate aperiam officia, velit quaerat impedit
                 porro! Quidem, at?
-               
               </p>
 
               <a href='https:/evestockstill.com'>set appointment</a>
             </div>
           </div>
 
-          <img ref={pImage} className={styles.pImage1} src={oldHome}></img>
+          <img ref={pImage} className={styles.pImage} src={probate}></img>
         </section>
       </div>
     </>
   );
 };
-export default InfoSectionTest;
+export default Probate;

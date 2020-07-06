@@ -1,19 +1,18 @@
 /* eslint-disable react/prop-types */
 import React, { useRef, useEffect } from 'react';
-import foreclose from '../../assets/forclose.jpg';
-import styles from './TestTwo.css';
+import Refi from '../../assets/Refi.jpg';
+import styles from './MainInfo.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const TestThree = ({ title, img, text, link }) => {
+const Refinance = ({ title, img, text, link }) => {
   const pContent = useRef(null);
   const pImage = useRef(null);
   const pSection = useRef(null);
-
   useEffect(() => {
     gsap.to(pContent.current, {
-      yPercent: -80,
+      yPercent: -90,
       ease: 'none',
       scrollTrigger: {
         trigger: pSection.current,
@@ -39,8 +38,8 @@ const TestThree = ({ title, img, text, link }) => {
       <div className={styles.greenSock_container}>
         <section ref={pSection} className={styles.pSection}>
           <div className={styles.pContainer}>
-            <div ref={pContent} className={styles.pContent} id={styles.color_1}>
-              <h2 className={styles.title}>Pre-Foreclosure</h2>
+            <div ref={pContent} className={styles.pContent} id={styles.color_4}>
+              <h2 className={styles.title}>Refinance</h2>
               <p className={styles.paragraph}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
                 laboriosam quibusdam tempora et vitae reiciendis rem amet
@@ -55,10 +54,10 @@ const TestThree = ({ title, img, text, link }) => {
             </div>
           </div>
 
-          <img ref={pImage} className={styles.pImage} src={foreclose}></img>
+          <img ref={pImage} className={styles.pImage} src={Refi}></img>
         </section>
       </div>
     </>
   );
 };
-export default TestThree;
+export default Refinance;
