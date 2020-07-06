@@ -6,7 +6,7 @@
      position: relative;
      min-height: 80vh;
      padding-top: 6rem;
-     background: linear-gradient(to bottom, $green, white);
+     background: linear-gradient(to bottom, $black,  $red);
      @media (max-width: 480px) {
           max-height: 100vh;
          padding-top: 30rem;
@@ -65,4 +65,7 @@ a {
          
     }
 }
+}
+#color_1 {
+    background-color: rgba(141, 7, 182, 0.705);
 }

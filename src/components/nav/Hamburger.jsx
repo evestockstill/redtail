@@ -8,7 +8,7 @@ const StyledHamburger = styled.div`
   position: fixed;
   top: 2rem;
   right: 5rem;
-  z-index: 1000;
+  z-index: 2000;
   display: none;
 
   @media (max-width: 950px) {

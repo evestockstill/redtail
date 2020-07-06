@@ -5,6 +5,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  z-index: 1000;
   @media (max-width: 950px) {
     padding-top: 3rem;
   }
@@ -20,7 +21,7 @@ const Ul = styled.ul`
   @media (max-width: 950px) {
     /* display: none; */
     flex-flow: column nowrap;
-    background: #f01827;
+    background: rgba(228, 180, 65, 0.9);
     position: fixed;
     top: 0;
     right: 0;
@@ -33,7 +34,7 @@ const Ul = styled.ul`
     li {
       color: white;
       font-size: 3rem;
-      padding: 3rem 1.5rem;
+      padding: 3rem;
       /* margin-top: 3rem */
     }
   }

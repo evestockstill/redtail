@@ -3,6 +3,7 @@ import NavBar from '../nav/NavBar';
 import InfoSection from '../InfoSection/InfoSection';
 import InfoSectionTest from '../InfoSectionTest/InfoSectionTest';
 import TestTwo from '../InfoSectionTest/TestTwo';
+import TestThree from '../InfoSectionTest/TestThree';
 import Blank from '../InfoSectionTest/Blank';
 
 export default function App() {
@@ -10,10 +11,10 @@ export default function App() {
     <>
       <NavBar />
       <Blank />
-      <InfoSectionTest />
+      <TestThree/>
       <TestTwo />
       <InfoSectionTest />
-      <TestTwo />
+     
    
     </>
   );
