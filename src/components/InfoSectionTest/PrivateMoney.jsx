@@ -35,7 +35,7 @@ const PrivateMoney = ({ title, img, text, link }) => {
 
   return (
     <>
-      <div className={styles.greenSock_container}>
+      <div id={styles.Private} className={styles.greenSock_container}>
         <section ref={pSection} className={styles.pSection}>
           <div className={styles.pContainer}>
             <div ref={pContent} className={styles.pContent} id={styles.color_3}>

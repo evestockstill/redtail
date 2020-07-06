@@ -78,3 +78,15 @@ a {
 #color_4 {
   background-color: rgba(226, 105, 5, 0.651);
 }
+#Private {
+  background: linear-gradient(to bottom, $black,  rgb(255, 255, 0));
+}
+#Refi {
+  background: linear-gradient(to bottom, $black,  rgb(21, 67, 196));
+}
+#Probate {
+  background: linear-gradient(to bottom, $black,  rgb(255, 145, 0));
+}
+#Tlc{
+  background: linear-gradient(to bottom, $black,  rgb(6, 73, 4));
+}
