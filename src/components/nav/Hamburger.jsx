@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import SideNav from './SideNav';
 
 const StyledHamburger = styled.div`
-  height: 2rem;
-  width: 2rem;
+  height: 2.3rem;
+  width: 2.3rem;
   position: fixed;
-  top: 2.5rem;
+  top: 2rem;
   right: 5rem;
-  z-index: 1;
+  z-index: 2000;
   display: none;
 
   @media (max-width: 950px) {
