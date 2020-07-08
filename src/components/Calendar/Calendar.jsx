@@ -12,13 +12,13 @@ const Calendar = () => {
 
     const section = document.getElementById('calendar-container');
     section.appendChild(script);
-
+    //might need to include removing the script
   }, []);
 
 
   return (
     <section id='calendar-container'>
-      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/30min" style={{ minWidth:'320px', height:'630px' }}></div>
+      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/30min" style={{ minWidth:'320px', height:'630px', backgroundColor: 'red' }}></div>
     </section>
   );
 };
