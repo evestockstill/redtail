@@ -13,7 +13,7 @@ const PreForeclosure = ({ title, img, text, link }) => {
 
   useEffect(() => {
     gsap.to(pContent.current, {
-      yPercent: -80,
+      yPercent: -90,
       ease: 'none',
       scrollTrigger: {
         trigger: pSection.current,
@@ -31,7 +31,7 @@ const PreForeclosure = ({ title, img, text, link }) => {
         scrub: true,
       },
     }),
-      [pContent, pImage];
+    [pContent, pImage];
   });
 
   return (

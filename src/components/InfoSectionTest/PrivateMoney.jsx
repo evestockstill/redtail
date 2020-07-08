@@ -30,7 +30,7 @@ const PrivateMoney = ({ title, img, text, link }) => {
         scrub: true,
       },
     }),
-      [pContent, pImage];
+    [pContent, pImage];
   });
 
   return (
