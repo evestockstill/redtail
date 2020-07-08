@@ -31,7 +31,7 @@ const Probate = ({ title, img, text, link }) => {
         scrub: true,
       },
     }),
-      [pContent, pImage];
+    [pContent, pImage];
   });
 
   return (
@@ -42,9 +42,7 @@ const Probate = ({ title, img, text, link }) => {
             <div ref={pContent} className={styles.pContent}>
               <h2 className={styles.title}>Probate</h2>
               <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                laboriosam quibusdam tempora et vitae reiciendis rem amet
-                accusamus at ipsum. Suscipit voluptates animi eaque? Placeat
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laboriosam quibusdam tempora et vitae reiciendis rem amet accusamus at ipsum. Suscipit voluptates animi eaque? Placeat
                 earum, amet harum quas laudantium debitis ratione consequuntur
                 nesciunt nostrum voluptatum officiis nulla quidem dolores
                 corporis, voluptate aperiam officia, velit quaerat impedit
