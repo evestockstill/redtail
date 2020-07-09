@@ -12,7 +12,7 @@ const Ul = styled.ul`
 
   li {
     padding-right: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 7rem;
     font-size: 1.7rem;
     color: #4c5425;
     cursor: pointer;

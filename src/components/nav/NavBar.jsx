@@ -29,14 +29,9 @@ const NavBar = () => {
         <div className={styles.logo_container}>
           <div className='logo'>
             <Media
-              query='(min-width: 1100px)'
-              render={() => <img src={logo} />}
-            />
-            <Media
-              query='(min-width: 600px) and (max-width: 1099px)'
+              query='(min-width: 600px)'
               render={() => <img src={midLogo} />}
             />
-
             <Media
               query='(max-width: 599px)'
               render={() => <img src={smLogo} />}
