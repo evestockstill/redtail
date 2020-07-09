@@ -1,0 +1,115 @@
+@import "../../index.css";
+.heroContainer {
+    height: 100vh;
+    background: linear-gradient(to bottom, $black, $black);
+}
+.hero {
+  height: 100vh;
+  visibility: hidden;
+  .container {
+    width: 90rem;
+    min-width: 90rem;
+    margin: 0 auto;
+    .heroInner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 1.5rem;
+      height: 100vh;
+      .heroContent {
+        width: 50%;
+      .heroContentInner {
+        width: 25rem;
+        margin: 0 auto;
+        color: #323232;
+        h1 {
+          font-weight: 600;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          .heroContentLine {
+            margin: 0;
+            height: 2.75rem;
+            overflow: hidden;
+          }
+        }
+        p{
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 300;
+          padding-right: 3rem;
+          margin-bottom: 3.5rem;
+        }
+        .btnRow {
+          position: relative;
+          &:before {
+            position: absolute;
+            content: '';
+            width: 3.5rem;
+            height: 1px;
+            background: #dfdfdf;
+            top: 50%;
+            left: -4rem;
+          }
+          button {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .3px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &:focus {
+              outline: none;
+              color: rgb(11, 192, 177);
+               
+            }
+            .arrowIcon {
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              left: 7rem;
+            }
+          }
+        }
+      }
+    }
+    .heroImages{
+      width: 50%;
+      height: 100vh;
+      position: relative;
+      .heroImagesInner{
+        .heroImage {
+          position: absolute;
+          overflow: hidden;
+        }
+          #img1 {
+            top: 0;
+            right: 0;
+            width: 65%;
+            height: 70%;
+          }
+          #dog {
+            bottom: .7rem;
+            left: 0;
+            width: 72%;
+            height: 85%;
+
+          }
+          .img {
+             
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+          }
+      }
+    }
+  }
+}
+}

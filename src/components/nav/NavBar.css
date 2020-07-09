@@ -1,9 +1,5 @@
 
-.logo_container {
-height: 10rem;
-width: 5rem;
-animation: moveInLeft 1s ease-in;
-}
+
 
 @keyframes moveInLeft {
   0% {

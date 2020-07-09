@@ -10,7 +10,7 @@ import Hamburger from './Hamburger';
 const Nav = styled.nav`
   padding: 0.5rem;
   width: 100%;
-  height: 7.5rem;
+  height: 13rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #f01827;
