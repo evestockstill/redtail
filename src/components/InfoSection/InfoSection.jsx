@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-scroll';
 import styles from './MainInfo.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +42,7 @@ const InfoSection = ({ title, img, text, link, secId, pId }) => {
           <div ref={pContent} className={`${styles.pContent} ${styles[pId]}`}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.paragraph}>{text}</p>
-            <a href='https:/evestockstill.com'>{link}</a>
+            <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>{link}</Link>
           </div>
         </div>
 

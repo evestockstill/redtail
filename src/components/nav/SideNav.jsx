@@ -51,7 +51,7 @@ const SideNav = ({ open }) => {
       <Link activeClass="active" to="Tlc" spy={true} smooth={true} offset={0} duration={500}>TLC Homes</Link>
       <Link activeClass="active" to="Refi" spy={true} smooth={true} offset={0} duration={500}>Refinancing</Link>
       <Link activeClass="active" to="Private" spy={true} smooth={true} offset={0} duration={500}>Private Money</Link>
-      <Link activeClass="active" to="" spy={true} smooth={true} offset={0} duration={500}>Contact Us</Link>
+      <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>Contact Us</Link>
     </Ul>
   );
 };
