@@ -27,7 +27,7 @@ export const sectionsData = [
     title: 'TLC Homes',
     img: 'istockUglyHome',
     text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laboriosam quibusdam tempora et vitae reiciendis rem amet accusamus at ipsum. Suscipit voluptates animi eaque? Placeat earum, amet harum quas laudantium debitis ratione consequuntur nesciunt nostrum voluptatum officiis nulla quidem dolores corporis, voluptate aperiam officia, velit quaerat impedit porro! Quidem, at?',
-    link: 'Find out how we can help you with you TLC home',
+    link: 'Find out how we can help you with your TLC home',
     secId: 'Tlc',
     pId: 'color_2'
   },
