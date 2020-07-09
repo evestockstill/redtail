@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const Ul = styled.ul`
   list-style: none;
@@ -10,7 +11,7 @@ const Ul = styled.ul`
     padding-top: 3rem;
   }
 
-  li {
+  a {
     padding-right: 1.5rem;
     padding-top: 2rem;
     font-size: 1.7rem;
@@ -31,7 +32,7 @@ const Ul = styled.ul`
     width: 36.5rem;
     /* padding-top: 5rem; */
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
-    li {
+    a {
       color: white;
       font-size: 3rem;
       padding: 3rem;
@@ -44,13 +45,13 @@ const Ul = styled.ul`
 const SideNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>About Us</li>
-      <li>Pre-Foreclosure</li>
-      <li>Probate</li>
-      <li>TLC Homes</li>
-      <li>Refinancing</li>
-      <li>Private Money</li>
-      <li>Contact Us</li>
+      <Link activeClass="active" to="AboutUs" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
+      <Link activeClass="active" to="PreForeclosure" spy={true} smooth={true} offset={0} duration={500}>Pre-Foreclosure</Link>
+      <Link activeClass="active" to="Probate" spy={true} smooth={true} offset={0} duration={500}>Probate</Link>
+      <Link activeClass="active" to="Tlc" spy={true} smooth={true} offset={0} duration={500}>TLC Homes</Link>
+      <Link activeClass="active" to="Refi" spy={true} smooth={true} offset={0} duration={500}>Refinancing</Link>
+      <Link activeClass="active" to="Private" spy={true} smooth={true} offset={0} duration={500}>Private Money</Link>
+      <Link activeClass="active" to="" spy={true} smooth={true} offset={0} duration={500}>Contact Us</Link>
     </Ul>
   );
 };
