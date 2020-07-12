@@ -16,6 +16,8 @@
       }
      .title {
          font-size: 2rem;
+  letter-spacing: .1em;
+
      }
 
 a {
@@ -52,6 +54,8 @@ a {
    box-shadow: 0 10px 10px -10px $black-3;
   color: white;
   padding: 4rem;
+  letter-spacing: .1em;
+
   @media (max-width: 480px) {
          width: 80%;
          padding: 3rem;
@@ -67,7 +71,7 @@ a {
    border-radius: 3%;
    box-shadow: 0 10px 10px -5px $black-3;
    @media (max-width: 480px) {
-        height: 40rem;
+        height: 37rem;
         width: 100%;
          
     }

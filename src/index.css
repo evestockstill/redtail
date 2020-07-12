@@ -40,11 +40,14 @@ html {
 }
 body {
   box-sizing: border-box;
+  letter-spacing: .1em;
+
 }
 
 $red: #f01827;
 $red2: #b8141f;
 $green: #4c5425;
+$green2: #222510;
 $black: rgb(20, 19, 19);
 $grey: rgb(49, 46, 46);
 $black-2: rgba(185, 178, 178, 0.233);

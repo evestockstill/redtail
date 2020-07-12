@@ -6,22 +6,25 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   z-index: 1000;
-  @media (max-width: 950px) {
+  @media (max-width: 980px) {
     padding-top: 3rem;
   }
 
   li {
     padding-right: 1.5rem;
-    padding-top: 7rem;
+    padding-top: 8rem;
     font-size: 1.7rem;
     color: #4c5425;
+    transform: all 0.3s ease;
     cursor: pointer;
+    &:hover {
+      color: #f01827;
+    }
   }
 
-  @media (max-width: 950px) {
-    /* display: none; */
+  @media (max-width: 980px) {
     flex-flow: column nowrap;
-    background: rgba(228, 180, 65, 0.9);
+    background: #ffff;
     position: fixed;
     top: 0;
     right: 0;
@@ -32,10 +35,10 @@ const Ul = styled.ul`
     /* padding-top: 5rem; */
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     li {
-      color: white;
+      color: #4c5425;
       font-size: 3rem;
       padding: 3rem;
-      /* margin-top: 3rem */
+      transform: all 0.3s ease;
     }
   }
 `;

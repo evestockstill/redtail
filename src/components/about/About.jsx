@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3 } from 'gsap';
 import styles from './About.css';
 import Media from 'react-media';
-import money from '../../assets/PrivateMoney.jpg';
+import bishop from '../../assets/bishop2.png';
 
 const AboutUs = () => {
   let aboutUs = useRef(null);
@@ -80,12 +80,6 @@ const AboutUs = () => {
                   obcaecati saepe reprehenderit animi sed, repellendus debitis
                   fugiat id veniam, incidunt et, quia numquam voluptatem
                   eligendi. Quaerat natus nostrum, amet quae non dolores earum,
-                  obcaecati architecto vero, quasi placeat numquam? In expedita
-                  dignissimos commodi voluptate minus, deleniti perferendis
-                  repudiandae iure neque sapiente atque nobis reprehenderit amet
-                  modi sint ea maxime ipsum a exercitationem saepe numquam quis
-                  eligendi. Eveniet quis saepe esse voluptate illum adipisci,
-                  pariatur veritatis. Alias nam atque nostrum non nemo impedit
                 </p>
               </div>
             </div>
@@ -99,7 +93,7 @@ const AboutUs = () => {
                   <Media
                     query='(min-width: 600px)'
                     render={() => (
-                      <img src={money} alt='welcome' className={styles.img} />
+                      <img src={bishop} alt='welcome' className={styles.img} />
                     )}
                   />
                   {/* <img src={money} alt='welcome' className={styles.img} /> */}
