@@ -11,39 +11,29 @@ const AboutUs = () => {
   let content = useRef(null);
 
   useEffect(() => {
-    // const Image = images.firstElementChild;
     const mainImage = images.firstElementChild;
 
     const headlineFirst = content.children[0].children[0];
     const headLineSecond = headlineFirst.nextSibling;
     const headLineThird = headLineSecond.nextSibling;
-    const contentP = content.children[1];
-    const contentBtn = content.children[2];
+    const contentP = content.current;
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    // tl.from(mainImage, 1.2, { y: 1280, ease: Power3.easeOut }, 'Start')
-    //   .from(
-    //     mainImage.firstElementChild,
-    //     2,
-    //     { scale: 1.6, ease: Power3.easeOut },
-    //     0.2
-    //   )
-      tl.from(mainImage, 1.2, { y: 1280, ease: Power3.easeOut }, 0.2)
+    tl.from(mainImage, 1.2, { x: -1080, ease: Power3.easeOut }, 0.4)
       .from(
         mainImage.firstElementChild,
         2,
-        { scale: 2.6, ease: Power3.easeOut },
+        { scale: 1.9, ease: Power3.easeOut },
         0.2
       );
     tl.staggerFrom(
       [headlineFirst.children, headLineSecond.children, headLineThird.children],
       1,
-      { y: 44, ease: Power3.easeOut, delay: 0.6 },
+      { y: 44, ease: Power3.easeOut, delay: 0.5 },
       0.10,
       'Start'
     )
-      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4)
-      .from(contentBtn, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.6);
+      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4);
   }, [tl]);
   return (
     <section className={styles.heroContainer}>
@@ -63,12 +53,12 @@ const AboutUs = () => {
                   </div>
                   <div className={styles.heroContentLine}>
                     <div className={styles.heroContentLineInner}>
-                      real estate solutions
+                      Real Estate Solutions
                     </div>
                   </div>
                   <div className={styles.heroContentLine}>
                     <div className={styles.heroContentLineInner}>
-                      & enterprise
+                      & Enterprise
                     </div>
                   </div>
                 </h1>
@@ -88,7 +78,6 @@ const AboutUs = () => {
                 className={styles.heroImagesInner}
                 ref={(el) => (images = el)}
               >
-                {' '}
                 <div className={styles.heroImage} id={styles.welcomeImg}>
                   <Media
                     query='(min-width: 600px)'
@@ -96,7 +85,6 @@ const AboutUs = () => {
                       <img src={bishop} alt='welcome' className={styles.img} />
                     )}
                   />
-                  {/* <img src={money} alt='welcome' className={styles.img} /> */}
                 </div>
               </div>
             </div>
