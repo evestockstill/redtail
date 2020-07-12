@@ -2,7 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import { TweenMax, TimelineLite, Power3 } from 'gsap';
 import styles from './About.css';
 import Media from 'react-media';
-import bishop from '../../assets/bishop2.png';
+import bishop2 from '../../assets/bishop2.png';
+import bishop from '../../assets/bishop.png';
 
 const AboutUs = () => {
   let aboutUs = useRef(null);
@@ -19,7 +20,7 @@ const AboutUs = () => {
     const contentP = content.current;
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    tl.from(mainImage, 1.2, { x: -1080, ease: Power3.easeOut }, 0.4)
+    tl.from(mainImage, 1.2, { x: -1680, ease: Power3.easeOut }, 0.4)
       .from(
         mainImage.firstElementChild,
         2,
@@ -82,7 +83,7 @@ const AboutUs = () => {
                   <Media
                     query='(min-width: 600px)'
                     render={() => (
-                      <img src={bishop} alt='welcome' className={styles.img} />
+                      <img src={bishop2} alt='welcome' className={styles.img} />
                     )}
                   />
                 </div>

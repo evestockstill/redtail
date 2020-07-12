@@ -1,15 +1,8 @@
 @import "../../index.css";
-.cal {
-     background: linear-gradient(to bottom, $black,  $red);
-     color: white;
-     h1 {
-         font-size: 2rem;
-         padding-top: 3rem;
-         text-align: center;
-     }
-    }
+
     #calendly {
         height: 100vh;
+     background: linear-gradient(to bottom, $black,  $green, $green);
 
-
+        
 }
