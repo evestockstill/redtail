@@ -75,16 +75,16 @@ a {
          
     }
 }
-}
-#color_1 {
+.color_1 {
     background-color: rgba(141, 7, 182, 0.705);
 }
-#color_2 {
+.color_2 {
   background-color: rgba(17, 18, 97, 0.788);
 }
-#color_3 {
+.color_3 {
   background-color: rgba(148, 11, 130, 0.781);
 }
-#color_4 {
+.color_4 {
   background-color: rgba(226, 105, 5, 0.651);
+}
 }

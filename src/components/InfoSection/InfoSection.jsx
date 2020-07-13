@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-scroll';
 // import styles from './MainInfo.css';
 import styles from './SecondMainInfo.css';
 
@@ -36,13 +37,13 @@ const InfoSection = ({ title, img, text, link, secId, pId }) => {
   });
 
   return (
-    <div id={styles[secId]} className={styles.greenSock_container}>
+    <div id={secId} className={`${styles.greenSock_container} ${styles[secId]}`}>
       <section ref={pSection} className={styles.pSection}>
         <div className={styles.pContainer}>
-          <div ref={pContent} className={styles.pContent} id={styles[pId]}>
+          <div ref={pContent} className={`${styles.pContent} ${styles[pId]}`}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.paragraph}>{text}</p>
-            <a href='https:/evestockstill.com'>{link}</a>
+            <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>{link}</Link>
           </div>
         </div>
 
@@ -58,7 +59,7 @@ InfoSection.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   secId: PropTypes.string.isRequired,
-  pId: PropTypes.string.isRequired
+  pId: PropTypes.string
 };
 
 export default InfoSection;
