@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from './Calendar.css';
 
 const Calendar = () => {
 
@@ -17,8 +18,9 @@ const Calendar = () => {
 
 
   return (
+    
     <section id='calendar-container'>
-      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/30min" style={{ minWidth:'320px', height:'100vh', zIndex: '10'  }}></div>
+      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/30min" id={styles.calendly}> </div>
     </section>
   );
 };

@@ -11,7 +11,7 @@ const StyledHamburger = styled.div`
   z-index: 2000;
   display: none;
 
-  @media (max-width: 950px) {
+  @media (max-width: 980px) {
     display: flex;
     justify-content: space-between;
     flex-flow: column;

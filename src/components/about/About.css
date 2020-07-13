@@ -1,0 +1,104 @@
+@import "../../index.css";
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, $black, $green, $green, $green);
+}
+.hero {
+    height: 100vh;
+    visibility: hidden;
+    margin-bottom: 20rem;
+    @media (max-width: 600px) {
+        margin-bottom: 30rem;
+    }
+    .container {
+        width: 80vw;
+        min-width: 1rem;
+        margin: 0 auto;
+        @media (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+        }
+
+        .heroInner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            height: 100vh;
+            .heroContent {
+                width: 60%;
+                @media (max-width: 600px) {
+                    width: 100%;
+                }
+                .heroContentInner {
+                    width: 35rem;
+                    margin: 1 auto;
+                        color: white;
+
+                    @media (max-width: 600px) {
+                        width: 45rem;
+                    }
+
+                    h1 {
+                        font-weight: 600;
+                        color: white;
+                        font-size: 3rem;
+                        margin-bottom: 1.5rem;
+                        @media (max-width: 600px) {
+                            font-size: 3.5rem;
+                            margin-bottom: 2.5rem;
+                        }
+                        .heroContentLine {
+                            margin: 0;
+                            height: 3.55rem;
+                            overflow: hidden;
+                            @media (max-width: 600px) {
+                                height: 4.5rem;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        font-weight: 300;
+                        padding-right: 3rem;
+                        @media (max-width: 600px) {
+                            font-size: 2rem;
+                            line-height: 2.7rem;
+                        }
+                    }
+                }
+            }
+            .heroImage {
+                width: 80%;
+                height: 100vh;
+                position: relative;
+                .heroImagesInner {
+                    .heroImage {
+                        position: absolute;
+                        overflow: hidden;
+                    }
+                    #welcomeImg {
+                        bottom: 0.7rem;
+                        left: 0;
+                        width: 92%;
+                        height: 72%;
+                    }
+                    .img {
+                        border-radius: 1%;
+                        box-shadow: 0 10px 10px -5px $black-3;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

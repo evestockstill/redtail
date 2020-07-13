@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-scroll';
-import styles from './MainInfo.css';
+// import styles from './MainInfo.css';
+import styles from './SecondMainInfo.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
