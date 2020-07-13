@@ -20,11 +20,11 @@ const AboutUs = () => {
     const contentP = content.current;
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    tl.from(mainImage, 1.2, { x: -1680, ease: Power3.easeOut }, 0.4)
+    tl.from(mainImage, 1.2, { x: 0, ease: Power3.easeOut }, 0.4)
       .from(
         mainImage.firstElementChild,
         2,
-        { scale: 1.9, ease: Power3.easeOut },
+        { scale: 1.1, ease: Power3.easeOut },
         0.2
       );
     tl.staggerFrom(
@@ -34,7 +34,7 @@ const AboutUs = () => {
       0.10,
       'Start'
     )
-      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4);
+      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.3);
   }, [tl]);
   return (
     <section className={styles.heroContainer}>
