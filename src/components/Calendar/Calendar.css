@@ -1,8 +1,6 @@
-@import "../../index.css";
+@import '../../index.css';
 
-    #calendly {
-        height: 100vh;
-     background: linear-gradient(to bottom, $black,  $green, $green);
-
-        
+#calendly {
+  height: 100vh;
+  background: linear-gradient(to bottom, $black, $green, $green);
 }

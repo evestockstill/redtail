@@ -12,13 +12,14 @@ const Ul = styled.ul`
 
   li {
     padding-right: 1.5rem;
-    padding-top: 8rem;
+    padding-top: 7.5rem;
     font-size: 1.7rem;
     color: #4c5425;
-    transform: all 0.3s ease;
+    transform: all 2s ease;
     cursor: pointer;
     &:hover {
       color: #f01827;
+     
     }
   }
 
