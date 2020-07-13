@@ -8,33 +8,33 @@ import bishop from '../../assets/bishop.png';
 const AboutUs = () => {
   let aboutUs = useRef(null);
   let images = useRef(null);
-  let tl = new TimelineLite({ delay: 0.8 });
+  let tl = new TimelineLite({ delay: 0.7 });
   let content = useRef(null);
 
   useEffect(() => {
     const mainImage = images.firstElementChild;
 
-    const headlineFirst = content.children[0].children[0];
-    const headLineSecond = headlineFirst.nextSibling;
-    const headLineThird = headLineSecond.nextSibling;
-    const contentP = content.current;
+    const firsTitle = content.children[0].children[0];
+    const secondTitle = firsTitle.nextSibling;
+    const thirdTitle = secondTitle.nextSibling;
+    const contentP = content.children[1];
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    tl.from(mainImage, 1.2, { x: -1680, ease: Power3.easeOut }, 0.4)
+    tl.from(mainImage, 1.2, { x: 0, ease: Power3.easeOut }, 0.4)
       .from(
         mainImage.firstElementChild,
         2,
-        { scale: 1.9, ease: Power3.easeOut },
+        { scale: 1.1, ease: Power3.easeOut },
         0.2
       );
     tl.staggerFrom(
-      [headlineFirst.children, headLineSecond.children, headLineThird.children],
+      [firsTitle.children, secondTitle.children, thirdTitle.children],
       1,
       { y: 44, ease: Power3.easeOut, delay: 0.5 },
       0.10,
       'Start'
     )
-      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.4);
+      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.3);
   }, [tl]);
   return (
     <section className={styles.heroContainer}>

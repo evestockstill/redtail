@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Media from 'react-media';
-import smLogo from '../../assets/logoredtailcopycopy.png';
-import midLogo from '../../assets/logoredtailMid.png';
+import smLogo from '../../assets/logoSm.png';
+import logo from '../../assets/logo.png';
 import Hamburger from './Hamburger';
 
 const Nav = styled.nav`
-  padding: 0.5rem;
+  padding: 0.7rem;
   width: 100%;
   height: 13.1rem;
   display: flex;
@@ -25,7 +25,7 @@ const NavBar = () => {
         <div className='logo'>
           <Media
             query='(min-width: 600px)'
-            render={() => <img src={midLogo} />}
+            render={() => <img src={logo} />}
           />
           <Media
             query='(max-width: 599px)'

@@ -1,0 +1,14 @@
+@import '../../index.css';
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 9.5vh;
+  background: white;
+padding: 2rem;
+ .nameBox {
+     padding-left: 1rem;
+ }
+  
+}
