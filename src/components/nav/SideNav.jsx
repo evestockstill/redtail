@@ -37,10 +37,8 @@ const Ul = styled.ul`
     /* padding-top: 5rem; */
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     a {
-      color: white;
       font-size: 3rem;
       padding: 3rem;
-      transform: all 0.3s ease;
     }
   }
 `;
@@ -49,6 +47,7 @@ const Ul = styled.ul`
 const SideNav = ({ open }) => {
   return (
     <Ul open={open}>
+      
       <Link activeClass="active" to="AboutUs" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
       <Link activeClass="active" to="PreForeclosure" spy={true} smooth={true} offset={0} duration={500}>Pre-Foreclosure</Link>
       <Link activeClass="active" to="Probate" spy={true} smooth={true} offset={0} duration={500}>Probate</Link>

@@ -37,7 +37,7 @@ const AboutUs = () => {
       .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.3);
   }, [tl]);
   return (
-    <section className={styles.heroContainer}>
+    <section id='AboutUs' className={styles.heroContainer}>
       <div className={styles.hero} ref={(el) => (aboutUs = el)}>
         <div className={styles.container}>
           <div className={styles.heroInner}>
