@@ -20,7 +20,7 @@ const Calendar = () => {
   return (
     
     <section id='calendar-container'>
-      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/30min" id={styles.calendly}> </div>
+      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/introduction" id={styles.calendly}> </div>
     </section>
   );
 };

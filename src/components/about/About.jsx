@@ -24,7 +24,7 @@ const AboutUs = () => {
       .from(
         mainImage.firstElementChild,
         2,
-        { scale: 1.1, ease: Power3.easeOut },
+        { scale: 1.2, ease: Power3.easeOut },
         0.2
       );
     tl.staggerFrom(
@@ -64,13 +64,7 @@ const AboutUs = () => {
                   </div>
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                  earum accusamus porro nesciunt. Recusandae, mollitia, nostrum
-                  iusto illum deleniti ratione rem totam est architecto
-                  laudantium veritatis nihil aut! Nesciunt unde quos commodi
-                  obcaecati saepe reprehenderit animi sed, repellendus debitis
-                  fugiat id veniam, incidunt et, quia numquam voluptatem
-                  eligendi. Quaerat natus nostrum, amet quae non dolores earum,
+                  Since 2017 we have been creating pathways of success for our investors and homeowners alike. Red Tail Real Estate Solutions and Enterprise was founded on the idea that helping people get what they need makes the world a better place. We are committed to imparting knowledge on to our clients and finding solutions that turn in to win-win outcomes enriching the lives of everyone involved.
                 </p>
               </div>
             </div>
