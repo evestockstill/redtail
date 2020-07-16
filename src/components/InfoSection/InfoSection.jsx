@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-scroll';
 // import styles from './MainInfo.css';
 import styles from './SecondMainInfo.css';
+// import styles from './ThirdMain.css'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,7 +44,9 @@ const InfoSection = ({ title, img, text, link, secId, pId }) => {
           <div ref={pContent} className={`${styles.pContent} ${styles[pId]}`}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.paragraph}>{text}</p>
-            <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>{link}</Link>
+            <li className={styles.calLink}>
+            <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>{link} </Link>
+            </li>
           </div>
         </div>
 

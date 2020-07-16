@@ -16,7 +16,7 @@ const Ul = styled.ul`
     padding-top: 7.5rem;
     font-size: 1.7rem;
     color: #4c5425;
-    transform: all 2s ease;
+    transition: all 1s ease;
     cursor: pointer;
     &:hover {
       color: #f01827;
@@ -47,7 +47,6 @@ const Ul = styled.ul`
 const SideNav = ({ open }) => {
   return (
     <Ul open={open}>
-      
       <Link activeClass="active" to="AboutUs" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
       <Link activeClass="active" to="PreForeclosure" spy={true} smooth={true} offset={0} duration={500}>Pre-Foreclosure</Link>
       <Link activeClass="active" to="Probate" spy={true} smooth={true} offset={0} duration={500}>Probate</Link>
