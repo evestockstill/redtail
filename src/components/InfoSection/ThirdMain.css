@@ -6,7 +6,8 @@
      position: relative;
      min-height: 100vh;
      padding-top: 6rem;
-     background: linear-gradient(to bottom, $black,  $red, $red);
+        background: linear-gradient(to bottom, $black,  rgb(255, 145, 0));
+
 
      @media (max-width: 480px) {
          
@@ -61,7 +62,7 @@
 .pContent {
   width: 60%;
   font-size: 1.7rem;
-  background-color: rgba(228,180,65, .8);
+  background-color: rgba(255, 145, 1, 0.795);
    box-shadow: 0 10px 10px -10px $black-3;
   color: white;
   padding: 3.5rem;
@@ -87,30 +88,31 @@
     }
 }
 .color_1 {
-    background-color: rgba(141, 7, 182, 0.705);
+    background-color:  #4718f0c4;
 }
 .color_2 {
-  background-color: rgba(17, 18, 97, 0.788);
+  background-color: rgba(0, 132, 255, 0.781);
 }
 .color_3 {
-  background-color: rgba(148, 11, 130, 0.781);
+  background-color: rgba(133, 52, 70, 0.829);
 }
 .color_4 {
-  background-color: rgba(226, 105, 5, 0.651);
+  background-color: rgba(14, 156, 9, 0.774);
 }
 
   .Private {
-  background: linear-gradient(to bottom, $black,  yellow);
+  background: linear-gradient(to bottom, $black,  rgb(194, 197, 12));
   }
 
   .Refi {
-    background: linear-gradient(to bottom, $black,  rgb(21, 67, 196));
+     background: linear-gradient(to bottom, $black,  rgb(133, 52, 70)) ;
+
   }
 
   .Probate {
-    background: linear-gradient(to bottom, $black,  rgb(255, 145, 0));
+    background: linear-gradient(to bottom, $black,  rgb(0, 132, 255));
   }
 
   .Tlc {
-    background: linear-gradient(to bottom, $black,  rgb(6, 73, 4));
+    background: linear-gradient(to bottom, $black,  rgb(14, 156, 9));
   }

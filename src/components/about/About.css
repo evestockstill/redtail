@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, $black, $green, $green, $green);
+    background: linear-gradient(to bottom, $black,  $red);
 }
 .hero {
     height: 100vh;
@@ -36,7 +36,7 @@
                 .heroContentInner {
                     width: 35rem;
                     margin: 1 auto;
-                        color: white;
+                    color: white;
 
                     @media (max-width: 600px) {
                         width: 45rem;

@@ -4,8 +4,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-scroll';
 // import styles from './MainInfo.css';
-import styles from './SecondMainInfo.css';
-// import styles from './ThirdMain.css'
+// import styles from './SecondMainInfo.css';
+import styles from './ThirdMain.css'
 
 gsap.registerPlugin(ScrollTrigger);
 
