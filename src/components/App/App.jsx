@@ -18,7 +18,7 @@ export default function App() {
       <NavBar />
       <AboutUs />
       <InfoSectionList sections={sectionsData} />
-      <Calendar />
+      {/* <Calendar /> */}
       <Footer />
     </>
   );
