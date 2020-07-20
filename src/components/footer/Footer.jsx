@@ -18,6 +18,18 @@ const Footer = () => {
       ></FontAwesomeIcon>
     </a>
   );
+  const Insta = (
+    <a target='self'
+      href='https://www.instagram.com/red_tail_funding/'
+    className='footerLinks'
+    >
+     <FontAwesomeIcon
+        icon={['fab', 'instagram']}
+        className='icons'
+        id='insta'
+      ></FontAwesomeIcon>
+    </a>
+  );
   const Phone = (
     <a target='self' href='tel: +8004410202' className='footerLinks'>
       <FontAwesomeIcon
@@ -39,6 +51,7 @@ const Footer = () => {
       </div>
       <div className={styles.icon}>
         <p>{FaceBook}</p>
+        <p>{Insta}</p>
         <p>{Phone}</p>
       </div>
     </footer>

@@ -20,7 +20,7 @@ const AboutUs = () => {
     const contentP = content.children[1];
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    tl.from(mainImage, 1.2, { x: 0, ease: Power3.easeOut }, 0.4)
+    tl.from(mainImage, 1.2, { y: 0, ease: Power3.easeOut }, 0.4)
       .from(
         mainImage.firstElementChild,
         2,
