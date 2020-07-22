@@ -32,7 +32,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(100%)')};
     opacity: ${({ open }) => (open ? 1 : 0)};
     height: 100vh;
-    width: 36.5rem;
+    width: 26.5rem;
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     a {
       font-size: 3rem;
