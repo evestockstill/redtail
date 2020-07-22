@@ -8,19 +8,18 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   z-index: 1000;
   @media (max-width: 980px) {
-    padding-top: 3rem;
+    padding-top: 10rem;
   }
 
   a {
-    padding-right: 1.5rem;
-    padding-top: 7.5rem;
+    padding-right: 1.3rem;
+    padding-top: 5.5rem;
     font-size: 1.7rem;
     color: #4c5425;
     transition: all 1s ease;
     cursor: pointer;
     &:hover {
       color: #f01827;
-     
     }
   }
 
@@ -34,11 +33,11 @@ const Ul = styled.ul`
     opacity: ${({ open }) => (open ? 1 : 0)};
     height: 100vh;
     width: 36.5rem;
-    /* padding-top: 5rem; */
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     a {
       font-size: 3rem;
       padding: 3rem;
+     
     }
   }
 `;

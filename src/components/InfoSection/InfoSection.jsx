@@ -36,19 +36,47 @@ const InfoSection = ({ title, img, text, link, secId, pId }) => {
   });
 
   return (
-    <div id={secId} className={`${styles.greenSock_container} ${styles[secId]}`}>
+    <div
+      id={secId}
+      className={`${styles.greenSock_container} ${styles[secId]}`}
+    >
       <section ref={pSection} className={styles.pSection}>
         <div className={styles.pContainer}>
           <div ref={pContent} className={`${styles.pContent} ${styles[pId]}`}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.paragraph}>{text}</p>
             <li className={styles.calLink}>
-            <Link activeClass="active" to="calendar-container" spy={true} smooth={true} offset={0} duration={500}>{link} </Link>
-            </li>
+              <Link
+                activeClass='active'
+                to='calendar-container'
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                {link}{' '}
+              </Link>
+                </li>
+              <p className={styles.top}>
+                <Link
+                  activeClass='active'
+                  to='nav'
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  Back To Top
+                </Link>
+              </p>
           </div>
         </div>
 
-        <img ref={pImage} className={styles.pImage} src={`https://raw.githubusercontent.com/evestockstill/redtail/master/src/assets/${img}.jpg`}></img>
+        <img
+          ref={pImage}
+          className={styles.pImage}
+          src={`https://raw.githubusercontent.com/evestockstill/redtail/master/src/assets/${img}.jpg`}
+        ></img>
       </section>
     </div>
   );

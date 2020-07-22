@@ -7,11 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   const FaceBook = (
-    <a target='self'
-    href='https://www.facebook.com/search/top?q=red%20tail%20real%20estate%20solutions%20%26%20enterprise'
-    className='footerLinks'
+    <a
+      target='self'
+      href='https://www.facebook.com/redtailrealestate'
+      className='footerLinks'
     >
-     <FontAwesomeIcon
+      <FontAwesomeIcon
         icon={['fab', 'facebook']}
         className='icons'
         id='faceBook'
@@ -31,7 +32,7 @@ const Footer = () => {
     </a>
   );
   const Phone = (
-    <a target='self' href='tel: +8004410202' className='footerLinks'>
+    <a target='self' href='tel: +18004410202' className='footerLinks'>
       <FontAwesomeIcon
         icon='phone'
         className='icons'
