@@ -4,7 +4,6 @@ import InfoSection from './InfoSection';
 
 const InfoSectionList = ({ sections }) => {
   const sectionElements = sections.map((sectionObj, i) => (
-    //we can add the class to each section here
     <section key={i}> 
       <InfoSection {...sectionObj} />
     </section>

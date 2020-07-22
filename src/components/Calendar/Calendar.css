@@ -3,5 +3,12 @@
 #calendly {
   height: 100vh;
        background: linear-gradient(to bottom, $black,  $red);
-
+}
+.top2{
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-end;
+padding-right: 2rem;
+  color: white;
+  cursor: pointer;
 }
