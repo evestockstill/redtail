@@ -23,6 +23,7 @@ const StyledHamburger = styled.div`
     border-radius: 4px;
     transform-origin: 4.5px;
     transition: all 0.5s linear;
+    cursor: pointer;
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
