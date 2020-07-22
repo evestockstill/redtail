@@ -18,9 +18,14 @@ const Calendar = () => {
 
 
   return (
-    
     <section id='calendar-container'>
-      <div className="calendly-inline-widget" data-url="https://calendly.com/j-a-ojeda/introduction" id={styles.calendly}> </div>
+      <div
+        className='calendly-inline-widget'
+        data-url='https://calendly.com/bishop7'
+        id={styles.calendly}
+      >
+        {' '}
+      </div>
     </section>
   );
 };
