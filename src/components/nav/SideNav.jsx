@@ -8,7 +8,7 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   z-index: 1000;
   @media (max-width: 980px) {
-    padding-top: 10rem;
+    padding-top: 7rem;
   }
 
   a {
