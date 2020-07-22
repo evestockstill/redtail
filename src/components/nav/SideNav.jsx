@@ -36,8 +36,14 @@ const Ul = styled.ul`
     transition: all 0.4s cubic-bezier(0.24, 0.23, 0.99, 0.97);
     a {
       font-size: 3rem;
-      padding: 3rem;
+      padding: 2rem;
      
+    }
+    @media(max-width: 700px) {
+      a{
+        padding: 1rem;
+        font-size: 2rem;
+      }
     }
   }
 `;

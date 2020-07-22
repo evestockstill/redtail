@@ -8,7 +8,7 @@ import Hamburger from './Hamburger';
 const Nav = styled.nav`
   padding: 0.7rem;
   width: 100%;
-  height: 11.1rem;
+  height: 10.6rem;
   display: flex;
   justify-content: space-between;
   font-family: 'Muli', sans-serif;
