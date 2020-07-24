@@ -41,7 +41,7 @@ const Ul = styled.ul`
     }
     @media(max-width: 700px) {
       a{
-        padding: 1rem;
+        padding: 1.5rem;
         font-size: 2rem;
       }
     }
@@ -52,7 +52,7 @@ const Ul = styled.ul`
 const SideNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <Link activeClass="active" to="AboutUs" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
+      <Link activeClass="active" to="nav" spy={true} smooth={true} offset={0} duration={500}>About Us</Link>
       <Link activeClass="active" to="PreForeclosure" spy={true} smooth={true} offset={0} duration={500}>Pre-Foreclosure</Link>
       <Link activeClass="active" to="Probate" spy={true} smooth={true} offset={0} duration={500}>Probate</Link>
       <Link activeClass="active" to="Tlc" spy={true} smooth={true} offset={0} duration={500}>TLC Homes</Link>
