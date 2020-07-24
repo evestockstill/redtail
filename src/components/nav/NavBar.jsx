@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Media from 'react-media';
 import smLogo from '../../assets/logoSm.png';
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg'
 import Hamburger from './Hamburger';
 
 const Nav = styled.nav`
@@ -24,14 +25,15 @@ const NavBar = () => {
     <section id='nav'>
       <Nav>
         <div className='logo'>
-          <Media
+          <img src={logo} />
+          {/* <Media
             query='(min-width: 600px)'
             render={() => <img src={logo} />}
           />
           <Media
             query='(max-width: 599px)'
             render={() => <img src={smLogo} />}
-          />
+          /> */}
         </div>
         <Hamburger />
       </Nav>
