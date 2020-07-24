@@ -1,5 +1,6 @@
 @import "../../index.css";
 .greenSock_container {
+  
   display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +11,8 @@
 
 
      @media (max-width: 480px) {
-         
+          max-width: 100% !important;
+        overflow-x: hidden !important;
          
     }
 }
@@ -82,7 +84,7 @@
    border-radius: 3%;
    box-shadow: 0 10px 10px -5px $black-3;
    @media (max-width: 480px) {
-        height: 35rem;
+        height: 32.5rem;
         width: 100%;
          
     }
