@@ -5,17 +5,23 @@
     align-items: center;
     height: 100vh;
     background: linear-gradient(to bottom, $black, $red);
+    @media screen and (max-width: 667px) {
+        .container {
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+        }
+    }
 }
 .hero {
     height: 100vh;
     visibility: hidden;
     margin-bottom: 17rem;
     @media (max-width: 980px) {
-        margin-bottom: .1rem;
+        margin-bottom: 0.1rem;
         margin-left: 8rem;
     }
     @media (max-width: 580px) {
-        margin-bottom: 19rem;
+        margin-bottom: 15rem;
         margin-left: 8rem;
     }
     .container {
@@ -71,19 +77,20 @@
                         }
                     }
                     .contactP {
-                        font-size: 4rem;
+                        display: inline-block;
+                        font-size: 2.8rem;
                         margin-top: 1.5rem;
-                        border: 3px solid $black;
+                        border: 3px solid white;
                         text-align: center;
-                        background: $black;
-                        color: white;
+                        background: white;
+                        color: $red;
                         cursor: pointer;
-                        padding: 1.5rem;
+                        padding: 1rem;
                         transition: all 1s ease;
                         &:hover {
-                            color: $red;
-                            background: white;
-                            border: 3px solid white;
+                            color: white;
+                            background: $black;
+                            border: 3px solid $black;
                         }
                     }
                 }
@@ -112,7 +119,6 @@
                         left: 0;
                         bottom: 0;
                         width: 100%;
-                      
                     }
                 }
             }

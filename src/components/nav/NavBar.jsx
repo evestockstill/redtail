@@ -13,6 +13,10 @@ const Nav = styled.nav`
   justify-content: space-between;
   font-family: 'Muli', sans-serif;
   font-weight: 600;
+  @media screen and (max-width: 667px) {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+}
   .logo {
     padding-top: 0.9rem;
     padding-left: 0.5rem;
