@@ -7,7 +7,7 @@ const StyledHamburger = styled.div`
   width: 2.3rem;
   position: fixed;
   top: 2.6rem;
-  right: 5rem;
+  right: 3.8rem;
   z-index: 2000;
   display: none;
 
