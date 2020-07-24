@@ -72,11 +72,18 @@
                     }
                     .contactP {
                         font-size: 4rem;
-                        padding-top: 2rem;
+                        margin-top: 1.5rem;
+                        border: 3px solid $black;
+                        text-align: center;
+                        background: $black;
+                        color: white;
                         cursor: pointer;
+                        padding: 1.5rem;
                         transition: all 1s ease;
                         &:hover {
-                            color: $green;
+                            color: $red;
+                            background: white;
+                            border: 3px solid white;
                         }
                     }
                 }
