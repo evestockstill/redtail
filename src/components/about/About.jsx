@@ -22,7 +22,7 @@ const AboutUs = () => {
     const contentP = content.children[1];
    
     TweenMax.to(aboutUs, 0, { css: { visibility: 'visible' } });
-    tl.from(mainImage, 1.2, { y: 0, ease: Power3.easeOut }, 0.4)
+    tl.from(mainImage, 1.2, { y: 0, ease: Power3.easeOut }, 0.3)
       .from(
         mainImage.firstElementChild,
         2,
@@ -32,7 +32,7 @@ const AboutUs = () => {
     tl.staggerFrom(
       [firsTitle.children, secondTitle.children, thirdTitle.children],
       1,
-      { y: 44, ease: Power3.easeOut, delay: 0.5 },
+      { y: 44, ease: Power3.easeOut, delay: 0.4 },
       0.10,
       'Start'
     )
