@@ -8,8 +8,6 @@
      min-height: 100vh;
      padding-top: 6rem;
         background: linear-gradient(to bottom, $black,  rgb(255, 145, 0));
-
-
      @media (max-width: 480px) {
           max-width: 100% !important;
         overflow-x: hidden !important;
@@ -57,6 +55,7 @@
    @media (max-width: 480px) {
         max-width: 90vw; 
         padding: 1rem;
+        overflow: hidden;
          
     }
 }
