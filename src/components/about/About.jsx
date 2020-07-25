@@ -32,11 +32,11 @@ const AboutUs = () => {
     tl.staggerFrom(
       [firsTitle.children, secondTitle.children, thirdTitle.children],
       1,
-      { y: 44, ease: Power3.easeOut, delay: 0.5 },
+      { y: 44, ease: Power3.easeOut, delay: 0.3 },
       0.10,
       'Start'
     )
-      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1.3);
+      .from(contentP, 1, { y: 20, opacity: 0, ease: Power3.easeOut }, 1);
   }, [tl]);
   return (
    
